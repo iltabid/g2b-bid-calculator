@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "g2b-bid-calculator"
+version = "0.1.0"
+description = "나라장터 적격심사 투찰하한가·복수예가·적격점수 계산 라이브러리"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "IltaBid", email = "pyoseopnoh@gmail.com" }]
+keywords = ["나라장터", "G2B", "입찰", "낙찰하한가", "복수예가", "적격심사"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/iltabid/g2b-bid-calculator"
+Documentation = "https://iltabid.github.io/g2b-bid-calculator/"
+Source = "https://github.com/iltabid/g2b-bid-calculator"
+Website = "https://ilta.kr"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

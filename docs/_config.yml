@@ -1,0 +1,6 @@
+title: g2b-bid-calculator
+description: 나라장터 적격심사 투찰하한가·복수예가·적격점수 계산 라이브러리
+theme: jekyll-theme-cayman
+url: https://iltabid.github.io
+baseurl: /g2b-bid-calculator
+markdown: kramdown
